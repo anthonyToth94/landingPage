@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: white;
+  font-size: 1em;
+
+  font-family: "Fira Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.spanBg {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  line-height: 32.5px;
+  width: 161.5px;
+  height: 32px;
+  background-image: url("/images/zoldHatter.png");
+  background-size: cover;
+}
+
+span {
+  display: inline-block; /* A háttérkép megjelenítéséhez az elemet inline-blockként kell beállítani */
+  padding-left: 20px; /* Megfelelő padding, hogy ne essen egybe a szöveggel */
+  background-image: url("/images/foci.png");
+  background-repeat: no-repeat;
+  background-position: 0px center; /* Háttérkép pozíciója */
+  background-size: 16px 16px;
+}
+
+.motorsport {
+  display: inline-block; /* A háttérkép megjelenítéséhez az elemet inline-blockként kell beállítani */
+  padding-left: 20px; /* Megfelelő padding, hogy ne essen egybe a szöveggel */
+  background-image: url("/images/bukosisak.png");
+  background-repeat: no-repeat;
+  background-position: 0px center; /* Háttérkép pozíciója */
+  background-size: 16px 16px;
+}
+
+.gpt {
+  display: inline-block; /* A háttérkép megjelenítéséhez az elemet inline-blockként kell beállítani */
+  padding-left: 20px; /* Megfelelő padding, hogy ne essen egybe a szöveggel */
+  background-image: url("/images/gpt.png");
+  background-repeat: no-repeat;
+  background-position: 0px center; /* Háttérkép pozíciója */
+  background-size: 16px 16px;
+}
+.wrapper {
+  padding: 30px 0px 60px 0px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.wrapperHeader {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outer ul {
+  display: flex;
+}
+#football,
+#kezilabda,
+#kosarlabda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kezilabda {
+  color: green;
+  background-image: url("../images/feherHatter.png");
+  background-size: cover;
+  height: 32px;
+
+  width: 223.46px;
+}
+.outer.header {
+  display: none;
+  background: #006633;
+  height: 32px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.outer.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+.outer.header ul li {
+  width: 218px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  /*padding: 10px 30px;*/
+  padding: 10px 0px;
+  width: 100%;
+  background-image: url("../images/hatterHeader.png");
+  background-size: cover;
+}
+
+.leftDiv {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.logo {
+  margin: 0px 10px;
+}
+
+.searchInput input[type="text"] {
+  font-family: "Mulish", sans-serif;
+  padding: 10px 19px;
+  border-radius: 8px;
+  border: 1px;
+
+  padding-left: 30px;
+  background-image: url("../images/kereses.png");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 20px 20px;
+
+  width: 306px;
+  height: 40px;
+}
+
+.searchInput input[type="text"]::placeholder {
+  text-indent: 20px;
+}
+.main {
+  width: 1440px;
+  display: flex;
+}
+
+.main section {
+  width: 856px;
+}
+
+.firstOuter {
+  width: 856px;
+  height: 480px;
+
+  background-image: url("../images/elsoFootball.png");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.firstOuter .inner {
+  padding: 30px;
+  padding-bottom: 0px;
+
+  height: 216.45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstOuter .inner h2 {
+  margin-top: 10px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.secondOuter {
+  width: 856px;
+  height: 233px;
+
+  margin: 30px 0px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.secondOuter .inner1,
+.secondOuter .inner2 {
+  width: 416px;
+  height: 233px;
+}
+
+.secondOuter .inner1 {
+  background-image: url("../images/masodikFootball.png");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.secondOuter .inner2 {
+  background-image: url("../images/harmadikFootball.png");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.secondOuter .inner1 .spanBg,
+.secondOuter .inner2 .spanBg {
+  position: absolute;
+  bottom: 107px;
+  left: 20px;
+}
+
+.secondOuter .inner2 .inner2Bottom,
+.secondOuter .inner1 .inner1Bottom {
+  height: 117px;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 0px 10px;
+}
+
+.thirdOuter {
+  width: 856px;
+  height: 392px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  color: black;
+}
+
+.thirdOuter .inner1,
+.thirdOuter .inner2 {
+  width: 416px;
+}
+
+.thirdOuter .inner1 .inner1Bottom {
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+}
+
+.thirdOuter .inner2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.thirdOuter .inner2 .inner2Box {
+  width: 416px;
+  height: 86px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aisdeBottom .inner2Box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aisdeBottom .inner2Box:first-child {
+  margin-top: 10px;
+}
+.thirdOuter .inner2 .inner2Box .inner2BoxDescription,
+.asideBottom .inner2Box {
+  display: flex;
+  flex-direction: column;
+  width: 306px;
+}
+
+.thirdOuter .inner2 .inner2Box .inner2BoxDescription h4,
+.asideBottom .inner2Box {
+  margin-top: 5px;
+}
+
+.fourthOuter {
+  margin: 30px 0px;
+  width: 856px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+}
+
+.fourthOuter .inner {
+  width: 196px;
+}
+
+.fourthOuter .inner img {
+  width: 100%;
+}
+.fourthOuter .inner h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+.fifthOuter {
+  color: black;
+}
+
+.fifthOuter img {
+  width: 856px;
+  height: 480px;
+}
+
+.fifthOuter .innerbottom {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fifthOuter .innerbottom h3 {
+  margin-bottom: 10px;
+}
+
+.sixthOuter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sixthOuter .inner {
+  width: 196px;
+  height: 100%;
+  background-image: url("../images/kezilabda.png");
+  background-size: cover;
+}
+
+.sixthOuter .inner .bg {
+  height: 196px;
+  background: linear-gradient(
+    to top,
+    rgba(95, 78, 77, 0.8) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: relative;
+}
+
+.sixthOuter .inner div {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+aside {
+  width: 416px;
+  color: black;
+
+  margin-left: 20px;
+}
+
+aside header {
+  background-image: url("../images/hatterHeader.png");
+  background-size: cover;
+
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside header div {
+  text-align: center;
+  background-image: url("../images/feherHatter.png");
+  background-size: cover;
+  width: 212.71px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside header div svg {
+  margin-right: 10px;
+}
+aside h4 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #006633;
+
+  margin: 10px 0px;
+}
+
+/* responzivitás */
+@media (max-width: 768px) {
+  .searchInput {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .outer.header {
+    display: block;
+  }
+
+  .wrapper,
+  .main section,
+  .firstOuter,
+  .secondOuter,
+  .thirdOuter,
+  .fourthOuter.fifthOuter img {
+    width: 696px;
+  }
+
+  .thirdOuter .inner1,
+  .thirdOuter .inner2 {
+    width: 336px;
+  }
+
+  .thirdOuter .inner1 .inner1Top img {
+    width: 336px;
+  }
+
+  .thirdOuter .inner2 .inner2Box {
+    width: 336px;
+  }
+
+  .thirdOuter .inner2 .inner2Box h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 230px;
+  }
+
+  .thirdOuter .inner2 .inner2Box .inner2BoxDescription {
+    padding: 10px;
+  }
+
+  .fourthOuter,
+  .fifthOuter,
+  .fifthOuter img {
+    width: 696px;
+  }
+
+  .secondOuter .inner1,
+  .secondOuter .inner2 {
+    width: 336px;
+  }
+
+  #football svg,
+  #kezilabda svg,
+  #kosarlabda svg {
+    margin-right: 10px;
+  }
+
+  .fifthOuter p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 564px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper,
+  .main section,
+  .firstOuter,
+  .secondOuter,
+  .thirdOuter,
+  .fourthOuter,
+  .fifthOuter {
+    width: 351px;
+  }
+
+  .fifthOuter img {
+    width: 336px;
+    height: 188px;
+  }
+  .secondOuter .inner1,
+  .secondOuter .inner2 {
+    width: 172px;
+  }
+
+  .thirdOuter {
+    flex-direction: column;
+    height: 688px;
+  }
+
+  .fourthOuter .inner:nth-child(even) {
+    display: none;
+  }
+
+  .fourthOuter .inner {
+    width: 163px;
+  }
+
+  .fifthOuter p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 320px;
+  }
+
+  .fourthOuter {
+    margin-top: 60px;
+  }
+
+  .firstOuter .inner h2 {
+    height: 73px;
+  }
+  .secondOuter {
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .secondOuter .inner1,
+  .secondOuter .inner2 {
+    width: 351px;
+  }
+}
